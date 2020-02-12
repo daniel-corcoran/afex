@@ -1,0 +1,13 @@
+﻿  AphexLanguage.cpp
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(70): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(71): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(81): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(84): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(85): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(86): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(102): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(105): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(106): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(107): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(125): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+c:\users\jppda\source\repos\aphexlanguage\aphexlanguage\aphexlanguage.cpp(144): warning C4715: 'process': not all control paths return a value
