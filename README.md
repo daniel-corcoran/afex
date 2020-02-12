@@ -40,17 +40,31 @@ Example: Calculating Pi
 
 Translated: 
 0               // DisplayRegister      $0
+
 1 4 60 62 56    // Arithmatic Power     $60, $62, sto $56
+
 1 2 62 58 55    // Arithmatic Product   $62, $58, sto $55
-1 0 59 55 55    // Arithmatic Add       $59, $55, sto $55                
+
+1 0 59 55 55    // Arithmatic Add       $59, $55, sto $55  
+
 1 3 56 55 55    // Arithmatic Quotient  $56, $55, sto $55
+
 1 2 57 55 55    // Arithmatic Product   $57, $55, sto $55
+
 1 0 55 0 0      // Arithmatic Add       $55, $0,  sto $0
+
 1 0 62 59 62    // Arithmatic Add       $62, $59, sto $62
+
 2 3 62 63 1     // Comparator Greater   $62, $63, else $1
+
 4               // Output DisplayRegister
+
 5               // Terminate
+
 0 0 0 0 0 0 0   // Empty
+
 0 0 0 0 0 0 0   // Empty
+
 4 2 1 -1 0 0    // $58, $59, $60, $61, $62, $63
+
 100000000       // $64
