@@ -1,4 +1,4 @@
-Each program can only be 64 'commands' long. Each command can be represented as a long double. 
+Each program can only be 64 'commands' long. Each command can be represented as a long double. Coming soon is variable program size, but program size will be fixed at compile time. 
 
 In an afex program, every value is a pointer. This means that an afex program can change any aspect of itself. 
 
