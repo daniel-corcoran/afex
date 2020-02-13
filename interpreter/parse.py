@@ -6,12 +6,22 @@ import numpy as np
 def parse2_array(line, array, cindex, vardic):
     # Vardic: array of arrays and their corresponding indexes in the byteword.
     # c index is the current farthest our commands are going
+    byteword = len(array)
+    varindex = len(vardic) + 1
     print(line)
     if line[0] == 'declare':
         varname = line[1]
         value = line[2]
         print("We need to declare a variable ", varname, 'value', value)
-    return None, None, None
+        assert varname not in vardic, 'Variable with this name has been previously defined.'
+        vardic[varname] = len(array) - varindex
+        array[vardic[varname]] = value
+
+
+
+
+
+    return array, cindex, vardic
 
 def get_byteword(word):
     byteword_exists = False # Has the user declared the program byteword
@@ -79,7 +89,7 @@ def convert_files(path):
     cindex = 1
     for set in word:
         afex, cindex, var_index = parse2_array(set, afex, cindex, var_index)
-
+    print(var_index)
     print(afex)
 
 

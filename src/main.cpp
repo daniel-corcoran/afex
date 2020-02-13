@@ -168,7 +168,7 @@ void help() {
 }
 int main()
 {
-	std::cout << " <|--aFex Language--|>  |\n  [copyright(c) 2019]   |\n q|DANIEL-_-CORCORAN|p  |\n      build 0.5.0       |\n________________________|\n";
+	std::cout << " <|--aFex Language--|>  |\n  [copyright(c) 2020]   |\n q|DANIEL-_-CORCORAN|p  |\n      build 0.0.1a      |\n________________________|\n";
 	std::string cmd_input;
 	while (true) {
 		std::cout << "afex_compiler$:";
