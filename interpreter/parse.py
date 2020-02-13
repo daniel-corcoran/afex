@@ -1,8 +1,17 @@
 # This file takes aFex wordcode and converts it to aFex bytecode.
 import re
-def parse2_array(line, array, index, vardic):
-    # Vardic: array of arrays and their corresponding indexes in the byteword.
+import numpy as np
 
+
+def parse2_array(line, array, cindex, vardic):
+    # Vardic: array of arrays and their corresponding indexes in the byteword.
+    # c index is the current farthest our commands are going
+    print(line)
+    if line[0] == 'declare':
+        varname = line[1]
+        value = line[2]
+        print("We need to declare a variable ", varname, 'value', value)
+    return None, None, None
 
 def get_byteword(word):
     byteword_exists = False # Has the user declared the program byteword
@@ -16,6 +25,8 @@ def get_byteword(word):
     assert byteword > 1, 'Program must be at least one byteword.'
     print("BYTEWORD:", byteword)
     return byteword
+
+
 def decomment(line):
     # Remove any contents of a line between (( )). Doesn't work for nested, IE '(( (( )) )). Only (( comment )) .
     firstC = False
@@ -42,7 +53,7 @@ def decomment(line):
     return newstr
 
 def convert_files(path):
-    import numpy as np
+
     word = []
     var_index = {}
     byteword = 0
@@ -56,12 +67,19 @@ def convert_files(path):
                 sl = sl.split(' ')
                 for key in sl:
                     if key not in ['', '\t', '\n']:
-                        operation.append(key)
-                word.append(operation)
+                        key = re.sub('\n', '', key)
+                        if len(key) > 0:
+                            operation.append(key)
+                if len(operation) > 0:
+                    word.append(operation)
 
 
     byteword = get_byteword(word)
     afex = np.zeros(byteword)
+    cindex = 1
+    for set in word:
+        afex, cindex, var_index = parse2_array(set, afex, cindex, var_index)
+
     print(afex)
 
 
