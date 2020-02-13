@@ -1,0 +1,7 @@
+byteword 128; ((Set the maximum length as 128.))
+add 5 2 to variable;
+declare x 10 ((when we declare a variable, we can also assign a value. The compiler will give it a memory location.))
+declare y 40;
+peek x;
+peek y;
+
